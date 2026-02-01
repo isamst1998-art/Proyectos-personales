@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis pedidos</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">Mis pedidos</div>
+  <nav class="nav-right">
+    <a href="index.html">Productos</a>
+    <a href="#" onclick="logout()">Cerrar sesión</a>
+  </nav>
+</header>
+
+<main class="container">
+  <div id="ordersContainer" class="orders-box"></div>
+</main>
+
+<script src="js/app.js"></script>
+<script>
+  function logout() {
+    localStorage.removeItem("session");
+    window.location.href = "login.html";
+  }
+</script>
+
+</body>
+</html>

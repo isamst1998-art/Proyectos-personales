@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #2f4858, #0f2a33);
+  color: #1e1e1e;
+}
+
+/* ================= HEADER ================= */
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 36px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px);
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.search-wrap {
+  flex: 1;
+}
+
+.search-wrap input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+}
+
+.nav-right a {
+  color: #fff;
+  margin-left: 18px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* ================= LAYOUT ================= */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+
+/* ================= PRODUCTS ================= */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 28px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  transition: transform .2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+
+.card-body {
+  padding: 18px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e90ff;
+  margin-bottom: 14px;
+}
+
+.btn {
+  background: #1e90ff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ================= AUTH ================= */
+.auth-page {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  background: white;
+  padding: 32px;
+  width: 420px;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.3);
+  text-align: center;
+}
+
+.auth-card h1 {
+  margin-bottom: 18px;
+}
+
+.auth-card input,
+.auth-card select {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.primary {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.muted {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* ================= ORDERS ================= */
+.orders-box {
+  background: rgba(255,255,255,.08);
+  padding: 32px;
+  border-radius: 18px;
+  color: white;
+}
+
+.order {
+  background: white;
+  color: #222;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.order small {
+  color: #777;
+}
+
+.order-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.order-product input {
+  width: 60px;
+}
+
+.order-product button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#sendOrderBtn {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Botón base profesional */
+.btn,
+button {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover,
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+.card .btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.card .btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.order-product button,
+.order button {
+  background: #e5e7eb;
+  color: #111;
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.order-product button:hover,
+.order button:hover {
+  background: #d1d5db;
+}
+
+#providerOrders .order button {
+  background: #374151;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  margin-right: 6px;
+  box-shadow: none;
+}
+
+/* En reparto */
+#providerOrders .order button:nth-of-type(1) {
+  background: #2563eb;
+}
+
+/* Entregado */
+#providerOrders .order button:nth-of-type(2) {
+  background: #059669;
+}
+
+#providerOrders .order button:hover {
+  opacity: 0.9;
+  transform: none;
+}
+
+.order {
+  background: #fff;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.card p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+.price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 16px;
+}
+
+/* ================= PANEL REPARTIDOR ================= */
+.page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 32px;
+  background: gainsboro;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.2);
+}
+
+.page h1 {
+  margin-bottom: 24px;
+  color: #222;
+}

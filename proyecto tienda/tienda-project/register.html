@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Crear cuenta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="auth-page">
+
+<div class="auth-card">
+  <h1>Crear cuenta</h1>
+
+<input id="regFullname" placeholder="Nombre completo">
+<input id="regEmpresa" placeholder="Empresa">
+<input id="regTelefono" placeholder="Teléfono">
+<input id="regDireccion" placeholder="Dirección (Calle y número)">
+
+<select id="regLocalidad">
+  <option value="">Selecciona localidad</option>
+  <option value="Lebrija">Lebrija</option>
+  <option value="El Cuervo">El Cuervo</option>
+  <option value="Las Cabezas">Las Cabezas</option>
+  <option value="Trebujena">Trebujena</option>
+</select>
+
+<input id="regEmail" placeholder="Email">
+<input id="regPassword" type="password" placeholder="Contraseña">
+<input
+  id="regPasswordRepeat"
+  type="password"
+  placeholder="Repetir contraseña"
+>
+
+
+ <button id="btnRegister" type="button">Registrarse</button>
+
+  <p class="muted">
+    ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+  </p>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
+
